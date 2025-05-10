@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=3 uid="uid://jgv45itaesnb"]
+
+[ext_resource type="Texture2D" uid="uid://c82mfmjqhrd7t" path="res://Game-Assets/Idle_animation (3).png" id="1_mfs6r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a4syp"]
+atlas = ExtResource("1_mfs6r")
+region = Rect2(0, 0, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1u46"]
+atlas = ExtResource("1_mfs6r")
+region = Rect2(2048, 0, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f7jsy"]
+atlas = ExtResource("1_mfs6r")
+region = Rect2(0, 2048, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w5344"]
+atlas = ExtResource("1_mfs6r")
+region = Rect2(2048, 2048, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jpvi5"]
+atlas = ExtResource("1_mfs6r")
+region = Rect2(0, 4096, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xcevl"]
+atlas = ExtResource("1_mfs6r")
+region = Rect2(2048, 4096, 2048, 2048)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s1r6y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a4syp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1u46")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f7jsy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w5344")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jpvi5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xcevl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hmfk7"]
+radius = 0.623791
+height = 4.8831
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(0.343473, 0, 0, 0, 0.343473, 0, 0, 0, 1, 0.284936, 2.63373, 0.0103675)
+sprite_frames = SubResource("SpriteFrames_s1r6y")
+autoplay = "default"
+frame_progress = 0.404948
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059896, 2.47931, -0.000879526)
+shape = SubResource("CapsuleShape3D_hmfk7")

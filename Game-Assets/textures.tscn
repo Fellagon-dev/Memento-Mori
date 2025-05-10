@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://bbjkw3d8yewa6"]
+
+[ext_resource type="Texture2D" uid="uid://duwe2usdb5phl" path="res://Game-Assets/cassandra-brown-brickwork-1.svg" id="1_306wm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2voy5"]
+albedo_texture = ExtResource("1_306wm")
+uv1_scale = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uv4rp"]
+material = SubResource("StandardMaterial3D_2voy5")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5xlks"]
+load_path = "res://.godot/imported/cassandra-brown-brickwork-1.svg-e6d260f3650381f3fe7166f80f4b0e2a.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gjpec"]
+albedo_texture = SubResource("CompressedTexture2D_5xlks")
+uv1_scale = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gqcet"]
+material = SubResource("StandardMaterial3D_gjpec")
+
+[node name="MeshLib" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_uv4rp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_gqcet")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D2/StaticBody3D"]
