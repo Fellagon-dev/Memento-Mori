@@ -50,7 +50,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 10.0
+"speed": 12.0
 }]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hmfk7"]
@@ -64,7 +64,7 @@ script = ExtResource("1_4bs16")
 transform = Transform3D(0.343473, 0, 0, 0, 0.343473, 0, 0, 0, 1, 0.284936, 2.63373, 0.0103675)
 sprite_frames = SubResource("SpriteFrames_s1r6y")
 autoplay = "default"
-frame_progress = 0.0717267
+frame_progress = 0.899878
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059896, 2.47931, -0.000879526)

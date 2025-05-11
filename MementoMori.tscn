@@ -19,7 +19,7 @@ sky = SubResource("Sky_cxla7")
 [node name="Game" type="Node3D"]
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_5vhrv")]
-transform = Transform3D(0.233428, 0, 0, 0, 0.233428, 0, 0, 0, 1.0471, -0.00805783, 1.76832, -0.00393856)
+transform = Transform3D(0.233428, 0, 0, 0, 0.233428, 0, 0, 0, 1.0471, -0.0183003, 1.76832, -0.00393856)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
 transform = Transform3D(4.28397, 0, 0, 0, 3.81463, 1.94961, 0, -0.434622, 0.850388, 0.220123, 5.9539, 1.95517)
