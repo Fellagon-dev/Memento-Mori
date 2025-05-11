@@ -24,7 +24,13 @@ func _physics_process(delta: float) -> void:
 		animated_sprite.flip_h = false
 	elif direction.x < 0:
 		animated_sprite.flip_h = true
-	
+		
+	# Animasi
+	if direction.x == 0:
+		animated_sprite.play("idle")
+	else:
+		animated_sprite.play("walk")
+		
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
