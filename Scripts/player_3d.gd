@@ -4,6 +4,7 @@ extends CharacterBody3D
 const SPEED = 2.0
 const JUMP_VELOCITY = 4.0
 
+@onready var animated_sprite = $AnimatedSprite3D
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -18,6 +19,12 @@ func _physics_process(delta: float) -> void:
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir := Input.get_vector("ke_kiri", "ke_kanan", "ke_atas", "ke_bawah")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	
+	if direction.x > 0: 
+		animated_sprite.flip_h = false
+	elif direction.x < 0:
+		animated_sprite.flip_h = true
+	
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
