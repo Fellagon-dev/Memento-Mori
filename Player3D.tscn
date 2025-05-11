@@ -134,7 +134,7 @@ transform = Transform3D(0.343473, 0, 0, 0, 0.343473, 0, 0, 0, 1, 0.284936, 2.633
 sprite_frames = SubResource("SpriteFrames_s1r6y")
 animation = &"walk"
 autoplay = "walk"
-frame_progress = 0.0549006
+frame_progress = 0.925476
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059896, 2.47931, -0.000879526)

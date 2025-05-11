@@ -24,7 +24,7 @@ sky = SubResource("Sky_cxla7")
 transform = Transform3D(0.233428, 0, 0, 0, 0.233428, 0, 0, 0, 1.0471, -0.0183003, 1.76832, -0.00393856)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
-transform = Transform3D(4.28398, 0, 0, 0, 3.83784, 1.86969, 0, -0.106597, 1.01411, 0.220123, 5.9539, 1.95517)
+transform = Transform3D(4.28398, 0, 0, 0, 4.25111, 0.529658, 0, -0.118076, 0.947691, 0.220123, 4.77498, 2.77612)
 fov = 57.5935
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
@@ -41,6 +41,16 @@ data = {
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_5lnu0")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(0.99225, 0.116044, -0.0444202, -0.10604, 0.977174, 0.184083, 0.064768, -0.177946, 0.981906, -19.2938, -13.1661, -0.107621)
+light_color = Color(0.999999, 0.994458, 0.772381, 1)
+light_energy = 1.485
+light_indirect_energy = 1.368
+light_volumetric_fog_energy = 0.838
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.29627, 0)
 
 [node name="building_A2" parent="." instance=ExtResource("4_qowt2")]
 transform = Transform3D(3.11605, 0, 0, 0, 3.11605, 0, 0, 0, 1.08822, -4.20543, 1, -3.75783)
