@@ -28,41 +28,41 @@ region = Rect2(0, 4096, 2048, 2048)
 atlas = ExtResource("1_7mn4f")
 region = Rect2(2048, 4096, 2048, 2048)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_as0x0"]
-atlas = ExtResource("3_6muop")
-region = Rect2(0, 0, 1600, 1984)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_r8qlg"]
-atlas = ExtResource("3_6muop")
-region = Rect2(1600, 0, 1600, 1984)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mi6r4"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_6muop"]
 atlas = ExtResource("3_6muop")
 region = Rect2(3200, 0, 1600, 1984)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_yvtab"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_as0x0"]
 atlas = ExtResource("3_6muop")
-region = Rect2(0, 1984, 1600, 1984)
+region = Rect2(1600, 0, 1600, 1984)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_f5rht"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_r8qlg"]
 atlas = ExtResource("3_6muop")
-region = Rect2(1600, 1984, 1600, 1984)
+region = Rect2(0, 0, 1600, 1984)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_0hv0w"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_mi6r4"]
 atlas = ExtResource("3_6muop")
 region = Rect2(3200, 1984, 1600, 1984)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_10mmx"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_yvtab"]
 atlas = ExtResource("3_6muop")
-region = Rect2(0, 3968, 1600, 1984)
+region = Rect2(1600, 1984, 1600, 1984)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_gilxj"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_f5rht"]
+atlas = ExtResource("3_6muop")
+region = Rect2(0, 1984, 1600, 1984)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0hv0w"]
+atlas = ExtResource("3_6muop")
+region = Rect2(3200, 3968, 1600, 1984)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10mmx"]
 atlas = ExtResource("3_6muop")
 region = Rect2(1600, 3968, 1600, 1984)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_if72c"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_gilxj"]
 atlas = ExtResource("3_6muop")
-region = Rect2(3200, 3968, 1600, 1984)
+region = Rect2(0, 3968, 1600, 1984)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_s1r6y"]
 animations = [{
@@ -91,6 +91,9 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_6muop")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_as0x0")
 }, {
 "duration": 1.0,
@@ -113,9 +116,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gilxj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_if72c")
 }],
 "loop": true,
 "name": &"walk",
@@ -134,7 +134,7 @@ transform = Transform3D(0.343473, 0, 0, 0, 0.343473, 0, 0, 0, 1, 0.284936, 2.633
 sprite_frames = SubResource("SpriteFrames_s1r6y")
 animation = &"walk"
 autoplay = "walk"
-frame_progress = 0.613642
+frame_progress = 0.0549006
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059896, 2.47931, -0.000879526)
