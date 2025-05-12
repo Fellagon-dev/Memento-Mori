@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4wk1kkhm4dvi"]
+
+[ext_resource type="PackedScene" uid="uid://b68c2ypeipkn2" path="res://Game-Assets/gltf/building_F.gltf" id="1_gabvg"]
+
+[node name="building_F2" instance=ExtResource("1_gabvg")]

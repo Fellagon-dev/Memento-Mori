@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cykh3v0na27dg"]
+
+[ext_resource type="PackedScene" uid="uid://coqf5lwk2tf7k" path="res://Game-Assets/gltf/streetlight.gltf" id="1_8rrjf"]
+
+[node name="streetlight2" instance=ExtResource("1_8rrjf")]

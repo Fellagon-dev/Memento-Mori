@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbl88xfu7e6i7"]
+
+[ext_resource type="PackedScene" uid="uid://bsd773otntal6" path="res://Game-Assets/gltf/building_C.gltf" id="1_vve12"]
+
+[node name="building_C2" instance=ExtResource("1_vve12")]
