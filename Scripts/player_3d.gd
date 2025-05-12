@@ -40,5 +40,5 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	# Camera delay frame, dan juga mengikuti player.
-	$Camera_Controller.position = lerp($Camera_Controller.position, position, 0.08)
+	$Camera_Controller.position = lerp($Camera_Controller.position, position, 0.07)
 	
