@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3x2m8m3khpbb"]
+
+[ext_resource type="PackedScene" uid="uid://d0uxxnglv177e" path="res://Game-Assets/gltf/trash_A.gltf" id="1_oh332"]
+
+[node name="trash_A2" instance=ExtResource("1_oh332")]

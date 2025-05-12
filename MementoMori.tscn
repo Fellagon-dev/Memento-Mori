@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://6sofowmmem20"]
+[gd_scene load_steps=22 format=3 uid="uid://6sofowmmem20"]
 
 [ext_resource type="PackedScene" uid="uid://bxe8ugwmrlkj2" path="res://Player3D.tscn" id="1_5vhrv"]
 [ext_resource type="PackedScene" uid="uid://c2umq8fvtd676" path="res://Buildings-Proto/building_b_2.tscn" id="2_cxla7"]
@@ -13,6 +13,9 @@
 [ext_resource type="PackedScene" uid="uid://cykh3v0na27dg" path="res://City-Props/streetlight_2.tscn" id="11_205m1"]
 [ext_resource type="MeshLibrary" uid="uid://cb6es0vjr5gpw" path="res://Meshlibs/Road.tres" id="12_x0f6v"]
 [ext_resource type="PackedScene" uid="uid://ch76kkq7afqwn" path="res://City-Props/car_hatchback_2.tscn" id="13_wmyv0"]
+[ext_resource type="PackedScene" uid="uid://d3x2m8m3khpbb" path="res://City-Props/trash_a_2.tscn" id="14_1qbty"]
+[ext_resource type="PackedScene" uid="uid://1a5gsv0vdelq" path="res://City-Props/car_sedan_2.tscn" id="15_fnsrp"]
+[ext_resource type="PackedScene" uid="uid://cfn05uulbpwvg" path="res://City-Props/trafficlight_c_2.tscn" id="16_crgya"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_5vhrv"]
 
@@ -123,3 +126,18 @@ transform = Transform3D(-1.67305, 0, -0.772966, 0, 2.63701, 0, 2.03832, 0, -0.63
 
 [node name="car_hatchback2" parent="." instance=ExtResource("13_wmyv0")]
 transform = Transform3D(0.867727, 0, 1.23783, 0, 2.54684, 0, -1.8189, 0, 0.59052, 0.335257, 1.15822, 4.16206)
+
+[node name="trash_A2" parent="." instance=ExtResource("14_1qbty")]
+transform = Transform3D(4.95988, 0, 0, 0, 6.43802, 0, 0, 0, 4.51269, -3.30002, 1.02419, -2.23247)
+
+[node name="trash_A3" parent="." instance=ExtResource("14_1qbty")]
+transform = Transform3D(4.95988, 0, 0, 0, 6.43802, 0, 0, 0, 4.51269, -2.87284, 1.02419, -2.42475)
+
+[node name="trash_A4" parent="." instance=ExtResource("14_1qbty")]
+transform = Transform3D(4.95988, 0, 0, 0, 6.43802, 0, 0, 0, 4.51269, -3.29444, 1.07806, -2.42475)
+
+[node name="car_sedan2" parent="." instance=ExtResource("15_fnsrp")]
+transform = Transform3D(0.675476, 0, -0.89401, 0, 2.53943, 0, 1.12209, 0, 0.538174, -2.78693, 1.08065, 3.90743)
+
+[node name="trafficlight_C2" parent="." instance=ExtResource("16_crgya")]
+transform = Transform3D(0.184731, 0, -1.19881, 0, 3.57181, 0, 2.7007, 0, 0.0819997, 6.08153, 1, 0.116514)
