@@ -131,10 +131,13 @@ script = ExtResource("1_4bs16")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
 transform = Transform3D(0.343473, 0, 0, 0, 0.343473, 0, 0, 0, 1, 0.284936, 2.63373, 0.0103675)
+shaded = true
+alpha_cut = 2
+texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_s1r6y")
-animation = &"walk"
-autoplay = "walk"
-frame_progress = 0.925476
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.18542
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059896, 2.47931, -0.000879526)
