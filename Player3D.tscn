@@ -137,7 +137,7 @@ texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_s1r6y")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.18542
+frame_progress = 0.270652
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059896, 2.47931, -0.000879526)

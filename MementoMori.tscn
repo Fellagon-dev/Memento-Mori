@@ -42,7 +42,6 @@ glow_strength = 0.98
 glow_bloom = 0.09
 glow_hdr_scale = 1.62
 glow_hdr_luminance_cap = 52.42
-volumetric_fog_enabled = true
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_5lnu0"]
 dof_blur_far_enabled = true
@@ -55,8 +54,8 @@ dof_blur_near_enabled = true
 transform = Transform3D(0.233428, 0, 0, 0, 0.233428, 0, 0, 0, 1.0471, -0.0183003, 1.76832, -0.954792)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
-transform = Transform3D(4.28398, 0, 0, 0, 4.26423, 0.410833, 0, -0.0915863, 0.950617, 0.239183, 4.79642, 6.10709)
-fov = 35.472
+transform = Transform3D(4.28398, 0, 0, 0, 4.26343, 0.417923, 0, -0.123437, 0.947521, 0.239183, 5.99711, 6.10709)
+fov = 30.1228
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
