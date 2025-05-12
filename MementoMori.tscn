@@ -17,6 +17,7 @@ sky_material = SubResource("PanoramaSkyMaterial_qowt2")
 [sub_resource type="Environment" id="Environment_5lnu0"]
 background_mode = 2
 sky = SubResource("Sky_cxla7")
+tonemap_mode = 3
 
 [node name="Game" type="Node3D"]
 
@@ -24,7 +25,7 @@ sky = SubResource("Sky_cxla7")
 transform = Transform3D(0.233428, 0, 0, 0, 0.233428, 0, 0, 0, 1.0471, -0.0183003, 1.76832, -0.00393856)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
-transform = Transform3D(4.28398, 0, 0, 0, 4.28395, 0.0138847, 0, -0.0030953, 0.955014, 0.220123, 2.40448, 4.69355)
+transform = Transform3D(4.28398, 0, 0, 0, 4.26423, 0.410833, 0, -0.0915863, 0.950617, 0.232928, 4.79642, 4.6937)
 fov = 81.9606
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
@@ -43,7 +44,7 @@ data = {
 environment = SubResource("Environment_5lnu0")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
-transform = Transform3D(-0.134666, -0.973556, 0.184535, 0.971703, -0.0932766, 0.217006, -0.194055, 0.208536, 0.958569, -1.22249, 2.13521, 2.73521)
+transform = Transform3D(-0.312795, 0.912987, -0.261943, -0.938441, -0.339624, -0.0631157, -0.146586, 0.226076, 0.963017, 0.518965, 2.2274, 4.77515)
 light_color = Color(0.999999, 0.994458, 0.772381, 1)
 light_energy = 1.485
 light_indirect_energy = 1.368
