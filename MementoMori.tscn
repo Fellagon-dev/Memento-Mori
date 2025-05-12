@@ -51,10 +51,11 @@ dof_blur_near_enabled = true
 [node name="Game" type="Node3D"]
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("1_5vhrv")]
-transform = Transform3D(0.233428, 0, 0, 0, 0.233428, 0, 0, 0, 1.0471, -0.0183003, 1.76832, -0.954792)
+transform = Transform3D(0.233428, 0, 0, 0, 0.233428, 0, 0, 0, 1.0471, -0.0183003, 1.76832, -0.604527)
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
-transform = Transform3D(4.28398, 0, 0, 0, 4.26343, 0.417923, 0, -0.123437, 0.947521, 0.239183, 5.99711, 6.10709)
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.991672, 0.128792, 0, -0.128792, 0.991672, 0.0375317, 3.16821, 5.43995)
+visible = false
 fov = 30.1228
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]

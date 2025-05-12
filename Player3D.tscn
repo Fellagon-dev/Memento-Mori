@@ -137,8 +137,18 @@ texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_s1r6y")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.270652
+frame_progress = 0.388292
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.059896, 2.47931, -0.000879526)
 shape = SubResource("CapsuleShape3D_hmfk7")
+
+[node name="Camera_Controller" type="Node3D" parent="."]
+
+[node name="Camera_Target" type="Node3D" parent="Camera_Controller"]
+transform = Transform3D(1, 0, 0, 0, 0.999904, -0.0138401, 0, 0.0138401, 0.999904, 0, 3.91553, 4.73422)
+
+[node name="Camera3D" type="Camera3D" parent="Camera_Controller/Camera_Target"]
+transform = Transform3D(1, 0, 0, 0, 0.999831, 0.0183947, 0, -0.0183947, 0.999831, 0, 0.0997869, 1.17589)
+current = true
+fov = 40.1865
